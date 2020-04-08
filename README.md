@@ -50,12 +50,12 @@ to move the uploaded image to a different folder using different server-side cre
                 "s3:PutObjectTagging",
                 "s3:PutObjectAcl"
             ],
-            "Resource": "arn:aws:s3:::neighborlink.dev.demo/uploads/*"
+            "Resource": "arn:aws:s3:::(bucket)/uploads/*"
         },
         {
             "Effect": "Allow",
             "Action": "s3:ListBucket",
-            "Resource": "arn:aws:s3:::neighborlink.dev.demo"
+            "Resource": "arn:aws:s3:::(bucket)"
         }
     ]
 }
